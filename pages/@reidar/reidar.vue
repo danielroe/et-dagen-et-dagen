@@ -14,6 +14,7 @@
     <h3>{{ name }} is {{ age }} years old</h3>
     <VBtn></VBtn>
     <Button></Button>
+    <h3>Lang Switcher under:</h3>
     <LangSwitcher></LangSwitcher>
   </div>
 </template>

@@ -5,13 +5,13 @@
     // route is only accessible by admins
     accessLevels: ['admin'],
 
-    // there exists no /admin page, so redirect to /admin/companies
+    // there exists no /admin page, so redirect to /admin/users
     middleware: (to) => {
       // check if navigating to /admin
       if (!(to.name as string).includes('admin___')) return
 
       // make sure localization is preserved
-      return navigateTo(`${to.fullPath}/companies`)
+      return navigateTo(`${to.fullPath}/users`)
     },
   })
 </script>
